@@ -947,9 +947,13 @@
 </section>
 <% if (htmlWebpackPlugin.options.COLUMN_SIZE == 100) { %>
     <%= require('./index-100.ejs')({htmlWebpackPlugin}) %>
-<% } else { %>
-    <%= require('./index-70-30.ejs')({htmlWebpackPlugin}) %>
 <% } %>
+<% if (htmlWebpackPlugin.options.COLUMN_SIZE == 70) { %>
+    <%= require('./index-70-30.ejs')({htmlWebpackPlugin}) %>
+<% }  %>
+<% if (htmlWebpackPlugin.options.COLUMN_SIZE == 1000) { %>
+    <%= require('./index-bleed.ejs')({htmlWebpackPlugin}) %>
+<% }  %>
 <section class="container container--100 ">
     <div class="container__inner">
         
