@@ -1,0 +1,11 @@
+const initShareBar = (el) => {
+  const printEl = el == null ? void 0 : el.querySelector(".js-share-print-btn");
+  const handlePrint = () => {
+    window.print();
+  };
+  printEl.addEventListener("click", handlePrint);
+};
+export {
+  initShareBar as default
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2hhcmVCYXIuaW5pdC00Zjc3ODIyNi5qcyIsInNvdXJjZXMiOlsiLi4vLi4vLi4vZnJvbnRlbmQvanMvY29tcG9uZW50cy9TaGFyZUJhci9TaGFyZUJhci5pbml0LmpzIl0sInNvdXJjZXNDb250ZW50IjpbImNvbnN0IGluaXRTaGFyZUJhciA9IChlbCkgPT4ge1xyXG4gIGNvbnN0IHByaW50RWwgPSBlbD8ucXVlcnlTZWxlY3RvcihcIi5qcy1zaGFyZS1wcmludC1idG5cIik7XHJcblxyXG4gIGNvbnN0IGhhbmRsZVByaW50ID0gKCkgPT4ge1xyXG4gICAgd2luZG93LnByaW50KCk7XHJcbiAgfTtcclxuXHJcbiAgcHJpbnRFbC5hZGRFdmVudExpc3RlbmVyKFwiY2xpY2tcIiwgaGFuZGxlUHJpbnQpO1xyXG59O1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgaW5pdFNoYXJlQmFyO1xyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUssTUFBQyxlQUFlLENBQUMsT0FBTztBQUMzQixRQUFNLFVBQVUseUJBQUksY0FBYztBQUVsQyxRQUFNLGNBQWMsTUFBTTtBQUN4QixXQUFPLE1BQUs7QUFBQSxFQUNoQjtBQUVFLFVBQVEsaUJBQWlCLFNBQVMsV0FBVztBQUMvQzsifQ==
